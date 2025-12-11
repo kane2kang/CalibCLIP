@@ -312,14 +312,6 @@ For questions or discussions, please:
 
 ---
 
-## ⭐ Star History
-
-If you find this project useful, please consider giving it a star ⭐!
-
-[![Star History Chart](https://api.star-history.com/svg?repos=your-username/CalibCLIP&type=Date)](https://star-history.com/#your-username/CalibCLIP&Date)
-
----
-
 ## 📖 Citation
 
 If you find CalibCLIP useful in your research, please consider citing:
