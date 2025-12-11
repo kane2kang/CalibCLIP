@@ -1,0 +1,9 @@
+torch>=1.10.0
+torchvision>=0.11.0
+numpy>=1.19.0
+Pillow>=8.0.0
+PyYAML>=5.4
+tqdm>=4.60.0
+matplotlib>=3.4.0
+ftfy>=6.0.0
+regex>=2021.0.0

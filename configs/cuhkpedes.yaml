@@ -1,0 +1,36 @@
+# CUHK-PEDES dataset configuration
+
+# Model settings
+model:
+  name: "ViT-B/16"
+  image_size: [384, 128]  # H, W
+  stride_size: 16
+
+# CVE settings
+cve:
+  residual_coefficient: 0.1
+  attention_percentile: 90.0
+
+# DCC settings
+dcc:
+  lambda_weight: 0.5
+  temperature: 0.01
+
+# Data settings
+data:
+  dataset: "cuhkpedes"
+  root: "./data/CUHK-PEDES"
+  json_path: "./data/CUHK-PEDES/reid_raw.json"
+  split: "test"
+
+# Evaluation settings
+eval:
+  batch_size: 64
+  num_workers: 4
+  topk: [1, 5, 10]
+  compute_map: true
+  compute_minp: true
+
+# Output settings
+output:
+  dir: "./outputs/cuhkpedes"

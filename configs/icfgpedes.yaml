@@ -1,0 +1,11 @@
+# ICFG-PEDES Dataset Configuration
+_BASE_: "base.yaml"
+
+data:
+  dataset: "icfgpedes"
+  root: "./data/ICFG-PEDES"
+  json_path: "ICFG-PEDES.json"
+  split: "test"
+
+output:
+  dir: "./outputs/icfgpedes"

@@ -1,0 +1,74 @@
+# CalibCLIP Default Configuration
+
+# Model settings
+model:
+  name: "ViT-B/16"
+  image_size: [384, 128]
+  stride_size: 16
+  embed_dim: 512
+
+  # Vision encoder
+  vision:
+    width: 768
+    layers: 12
+    patch_size: 16
+
+  # Text encoder
+  text:
+    context_length: 77
+    vocab_size: 49408
+    width: 512
+    heads: 8
+    layers: 12
+
+  # CVE settings
+  cve:
+    enabled: true
+    residual_coefficient: 0.1
+
+  # DCC settings
+  dcc:
+    enabled: true
+    attention_threshold: null  # auto
+    lambda_weight: 0.5
+
+  # Retrieval settings
+  retrieval:
+    top_k: 100
+
+# Data settings
+data:
+  dataset: "CUHK-PEDES"
+  root: "./data"
+  num_workers: 4
+
+  # Image transforms
+  transforms:
+    train:
+      resize: [384, 128]
+      horizontal_flip: 0.5
+      pad: 10
+      random_crop: true
+      normalize:
+        mean: [0.48145466, 0.4578275, 0.40821073]
+        std: [0.26862954, 0.26130258, 0.27577711]
+    test:
+      resize: [384, 128]
+      normalize:
+        mean: [0.48145466, 0.4578275, 0.40821073]
+        std: [0.26862954, 0.26130258, 0.27577711]
+
+# Evaluation settings
+eval:
+  batch_size: 128
+  metrics: ["R@1", "R@5", "R@10", "mAP", "mINP"]
+
+# Output settings
+output:
+  dir: "./outputs"
+  save_features: false
+
+# Misc
+seed: 42
+device: "cuda"
+fp16: true

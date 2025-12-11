@@ -1,0 +1,11 @@
+# RSTPReid Dataset Configuration
+_BASE_: "base.yaml"
+
+data:
+  dataset: "rstp"
+  root: "./data/RSTPReid"
+  json_path: "data_captions.json"
+  split: "test"
+
+output:
+  dir: "./outputs/rstp"
