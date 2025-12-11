@@ -1,8 +1,5 @@
 # CalibCLIP: Contextual Calibration of Dominant Semantics for Text-Driven Image Retrieval
 
-<p align="center">
-  <img src="assets/logo.png" alt="CalibCLIP Logo" width="200"/>
-</p>
 
 <p align="center">
   <a href="https://doi.org/10.1145/3746027.3755765"><img src="https://img.shields.io/badge/ACM%20MM-2025-blue.svg" alt="ACM MM 2025"></a>
@@ -31,7 +28,7 @@
 ## 📰 News
 
 - **[2025.08]** 🎉 CalibCLIP is accepted by **ACM MM 2025**!
-- **[2025.11]** 📦 Code and pretrained models are released.
+- **[2025.11]** 📦 Code are released.
 
 ---
 
@@ -193,45 +190,8 @@ data/
 
 ---
 
-## 🏆 Model Zoo
 
-### Pretrained Models
 
-| Model | Dataset | Rank-1 | Rank-5 | Rank-10 | mAP | 
-|-------|---------|--------|--------|---------|-----|
-| CalibCLIP-B/16 | CUHK-PEDES | **78.35** | 90.12 | 93.87 | 69.42 | 
-| CalibCLIP-B/16 | ICFG-PEDES | **65.28** | 81.45 | 86.92 | 42.16 | 
-| CalibCLIP-B/16 | RSTPReid | **62.15** | 82.30 | 89.45 | 48.73 | 
-
-> 📌 All models use ViT-B/16 as the vision backbone, initialized from OpenAI CLIP.
-
----
-
-## 📈 Results
-
-### Comparison with State-of-the-Art
-
-We conduct comprehensive experiments on three text-based person retrieval benchmarks.
-
-#### Methods without CLIP Backbone
-
-| Method | Venue | CUHK-PEDES ||| ICFG-PEDES ||| RSTPReid |||
-|--------|-------|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| | | R@1 | R@5 | R@10 | R@1 | R@5 | R@10 | R@1 | R@5 | R@10 |
-| EAIBC | TNNLS'24 | 64.96 | 83.36 | 88.42 | 58.95 | 75.95 | 81.72 | 49.85 | 70.15 | 79.85 |
-| IVT | ECCV'22 | 65.59 | 83.11 | 89.20 | 56.04 | 73.60 | 80.22 | 46.70 | 70.00 | 78.80 |
-| CTLG | TCSVT'23 | 69.47 | 87.13 | 92.13 | 57.69 | 75.79 | 82.67 | - | - | - |
-| SAP-SAM | MM'24 | 75.05 | 89.93 | 93.73 | 63.97 | 80.84 | 86.17 | 62.85 | 82.65 | 89.85 |
-
-#### Methods with CLIP Backbone
-
-| Method | Venue | CUHK-PEDES |||| ICFG-PEDES |||| RSTPReid ||||
-|--------|-------|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| | | R@1 | R@5 | R@10 | mAP | R@1 | R@5 | R@10 | mAP | R@1 | R@5 | R@10 | mAP |
-| CFine | TIP'23 | 69.57 | 85.93 | 91.15 | - | 60.83 | 76.55 | 82.42 | - | 50.55 | 72.50 | 81.60 | - |
-| IRRA | CVPR'23 | 73.38 | 89.93 | 93.71 | 66.13 | 63.46 | 80.25 | 85.82 | 38.06 | 60.20 | 81.30 | 88.20 | 47.17 |
-| TILT | MM'24 | 74.46 | 90.21 | 94.19 | 66.31 | 63.77 | 80.80 | 86.00 | 38.07 | 60.75 | 81.80 | 88.70 | 47.56 |
-| IRLT | AAAI'24 | 74.46 | 90.19 | 94.01 | - | 64.72 | 81.35 | 86.31 | - | 61.49 | 82.26 | 89.23 | - |
 
 ### 🔌 CalibCLIP as Plug-and-Play Module
 
@@ -348,7 +308,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For questions or discussions, please:
 - Open an issue in this repository
-- Contact: [your-email@example.com](mailto:your-email@example.com)
+- Contact: [kangbin23@mails.ucas.ac.cn]
 
 ---
 
@@ -369,16 +329,7 @@ If you find CalibCLIP useful in your research, please consider citing:
   author = {Kang, Bin and Chen, Bin and Wang, Junjie and Li, Yulin and Zhao, Junzhi and Wang, Junle and Tian, Zhuotao},
   title = {CalibCLIP: Contextual Calibration of Dominant Semantics for Text-Driven Image Retrieval},
   year = {2025},
-  isbn = {9798400720352},
-  publisher = {Association for Computing Machinery},
-  address = {New York, NY, USA},
-  url = {https://doi.org/10.1145/3746027.3755765},
-  doi = {10.1145/3746027.3755765},
-  booktitle = {Proceedings of the 33rd ACM International Conference on Multimedia},
-  pages = {5140–5149},
-  numpages = {10},
-  location = {Dublin, Ireland},
-  series = {MM '25}
+  booktitle = {Proceedings of the 33rd ACM International Conference on Multimedia}
 }
 ```
 
